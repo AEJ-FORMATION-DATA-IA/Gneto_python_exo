@@ -59,7 +59,7 @@ class Operation:
 
 
 A = 2
-B = 4
+B = 0
 op = Operation()
 op.set_operands(A, B)
 
@@ -74,11 +74,12 @@ print(F)
 G = op.divise_and_return_int()
 print(G)
 H = ''
+print(" ")
 #----------------END OF ARITHMETRIC OPERATIONS
 
 
 ##DCTIONARY CREATION
-
+print("DCTIONARY CREATION")
 Operation_dictionary = {}  # init an empty dictionary
 
 Operation_dictionary["C"] = C  # add  data
@@ -107,17 +108,20 @@ print(" ")
 for key in Operation_dictionary:
     print(f'key/value pair {key}: {Operation_dictionary.get(key)}')
 
-
+print(" ")
 #-----------------END OF DICTIONARY CREATION
 
 ### TUPLE CREATION
+print("TUPLE CREATION")
 tuples = (A, B, C)
+
+print("")
 ### Warning !!!! tuple cannot be neither modified nor added
 #----------------END TUPLE CEATION
 
 
 # LIST CREATION
-
+print("LIST CREATION")
 liste_1 = ["A", "B", "C", "D"]  # init a list_1 with values
 liste_2 = [A, B, C, D]
 liste_3 = [
@@ -139,6 +143,7 @@ print(" ")
 
 
 # SMALBOT 1
+
 class SmallBot1(Operation):
     response = 0
     counter = 0
